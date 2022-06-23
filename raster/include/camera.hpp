@@ -1,8 +1,8 @@
 #pragma once
 
-#include"vec.h"
-#include"Matrix.h"
-#include"common.h"
+#include"vec.hpp"
+#include"Matrix.hpp"
+#include"common.hpp"
 #include <vector>
 #include<cmath>
 

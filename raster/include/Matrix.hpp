@@ -1,5 +1,5 @@
 #pragma once
-#include"vec.h"
+#include"vec.hpp"
 #include <algorithm>
 using namespace std;
 

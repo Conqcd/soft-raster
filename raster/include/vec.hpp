@@ -1,5 +1,5 @@
 #pragma once
-#include<cmath>
+#include <cmath>
 #define     GLH_EPSILON          float(10e-6)
 #define		GLH_EPSILON_2		float(10e-12)
 
