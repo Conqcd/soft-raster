@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\1f5b7c7c7b1f0dacc07e89702d778cf3\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AE7716E3-EB5E-39BF-84F2-4A83832688E8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

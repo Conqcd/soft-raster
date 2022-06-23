@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_assert.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_common.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_compare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_font.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_fuzzer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_harness.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_imageBlit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_imageBlitBlend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_imageFace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_imagePrimitives.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_imagePrimitivesBlend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\CADCG\soft raster\build\_deps\sdl-src\src\test\SDL_test_random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_blendmode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_clipboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_copying.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_cpuinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_egl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_filesystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_gamecontroller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_gesture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_guid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_haptic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_hidapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_hints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_keycode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_loadso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_locale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_messagebox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_metal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_mouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_name.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengl_glext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengles2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengles2_gl2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengles2_gl2ext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengles2_gl2platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_opengles2_khrplatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_pixels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_power.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_quit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_rwops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_scancode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_sensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_stdinc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_surface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_syswm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_compare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_fuzzer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_harness.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_images.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_test_random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_touch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_video.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\SDL_vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\begin_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\CADCG\soft raster\build\_deps\sdl-build\include\close_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_assert.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_atomic.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_audio.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_bits.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_blendmode.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_clipboard.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_copying.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_cpuinfo.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_egl.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_endian.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_error.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_events.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_filesystem.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_gamecontroller.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_gesture.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_guid.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_haptic.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_hidapi.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_hints.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_joystick.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_keyboard.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_keycode.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_loadso.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_locale.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_log.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_main.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_messagebox.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_metal.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_misc.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_mouse.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_mutex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_name.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengl.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengl_glext.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengles.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengles2.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengles2_gl2.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengles2_gl2ext.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengles2_gl2platform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_opengles2_khrplatform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_pixels.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_platform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_power.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_quit.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_rect.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_render.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_rwops.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_scancode.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_sensor.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_shape.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_stdinc.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_surface.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_system.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_syswm.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_assert.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_common.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_compare.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_crc32.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_font.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_fuzzer.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_harness.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_images.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_log.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_md5.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_memory.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_test_random.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_thread.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_timer.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_touch.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_types.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_version.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_video.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\SDL_vulkan.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\begin_code.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\6fb8df88de574f59db66fe2ea9edd7dc\close_code.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\CADCG\soft raster\build\_deps\sdl-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AE7716E3-EB5E-39BF-84F2-4A83832688E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5BDD45EA-F664-3CF9-8198-B62E7CF55D2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{50D6BCB0-50D0-3B44-9B5B-FC86B0767C88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

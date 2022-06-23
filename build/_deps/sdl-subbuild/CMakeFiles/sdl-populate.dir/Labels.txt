@@ -1,0 +1,14 @@
+# Target labels
+ sdl-populate
+# Source files and their labels
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/sdl-populate
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/2563f2dade6032936b40f343b3fa412f/sdl-populate.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/4e631f6a6647dd49d7f90d3a71301a52/sdl-populate-complete.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-build.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-configure.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-download.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-install.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-mkdir.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-patch.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-test.rule
+D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/bba777e836706bb729b2a9c4c038472a/sdl-populate-update.rule

@@ -1,0 +1,780 @@
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_ASSERT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_assert.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_assert.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_ATOMIC.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_atomic.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_atomic.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_AUDIO.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_audio.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_audio.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_BITS.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_bits.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_bits.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_BLENDMODE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_blendmode.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_blendmode.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_CLIPBOARD.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_clipboard.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_clipboard.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_COPYING.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_copying.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_copying.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_CPUINFO.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_cpuinfo.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_cpuinfo.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_EGL.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_egl.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_egl.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_ENDIAN.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_endian.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_endian.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_ERROR.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_error.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_error.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_EVENTS.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_events.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_events.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_FILESYSTEM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_filesystem.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_filesystem.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_GAMECONTROLLER.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_gamecontroller.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_gamecontroller.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_GESTURE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_gesture.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_gesture.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_GUID.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_guid.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_guid.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_HAPTIC.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_haptic.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_haptic.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_HIDAPI.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_hidapi.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_hidapi.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_HINTS.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_hints.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_hints.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_JOYSTICK.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_joystick.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_joystick.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_KEYBOARD.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_keyboard.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_keyboard.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_KEYCODE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_keycode.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_keycode.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_LOADSO.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_loadso.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_loadso.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_LOCALE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_locale.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_locale.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_LOG.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_log.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_log.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_MAIN.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_main.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_main.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_MESSAGEBOX.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_messagebox.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_messagebox.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_METAL.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_metal.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_metal.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_MISC.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_misc.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_misc.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_MOUSE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_mouse.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_mouse.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_MUTEX.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_mutex.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_mutex.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_NAME.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_name.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_name.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGL.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengl.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengl.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGL_GLEXT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengl_glext.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengl_glext.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGLES.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengles.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengles.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGLES2.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengles2.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengles2.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGLES2_GL2.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengles2_gl2.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengles2_gl2.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGLES2_GL2EXT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengles2_gl2ext.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengles2_gl2ext.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGLES2_GL2PLATFORM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengles2_gl2platform.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengles2_gl2platform.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_OPENGLES2_KHRPLATFORM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_opengles2_khrplatform.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_opengles2_khrplatform.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_PIXELS.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_pixels.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_pixels.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_PLATFORM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_platform.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_platform.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_POWER.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_power.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_power.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_QUIT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_quit.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_quit.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_RECT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_rect.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_rect.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_RENDER.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_render.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_render.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_RWOPS.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_rwops.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_rwops.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_SCANCODE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_scancode.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_scancode.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_SENSOR.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_sensor.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_sensor.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_SHAPE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_shape.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_shape.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_STDINC.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_stdinc.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_stdinc.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_SURFACE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_surface.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_surface.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_SYSTEM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_system.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_system.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_SYSWM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_syswm.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_syswm.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_ASSERT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_assert.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_assert.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_COMMON.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_common.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_common.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_COMPARE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_compare.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_compare.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_CRC32.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_crc32.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_crc32.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_FONT.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_font.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_font.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_FUZZER.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_fuzzer.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_fuzzer.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_HARNESS.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_harness.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_harness.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_IMAGES.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_images.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_images.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_LOG.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_log.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_log.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_MD5.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_md5.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_md5.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_MEMORY.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_memory.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_memory.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TEST_RANDOM.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_test_random.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_test_random.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_THREAD.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_thread.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_thread.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TIMER.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_timer.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_timer.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TOUCH.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_touch.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_touch.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_TYPES.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_types.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_types.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_VERSION.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_version.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_version.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_VIDEO.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_video.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_video.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\SDL_VULKAN.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_vulkan.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/SDL_vulkan.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\BEGIN_CODE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/begin_code.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/begin_code.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\6FB8DF88DE574F59DB66FE2EA9EDD7DC\CLOSE_CODE.H.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E copy_if_different "D:/CADCG/soft raster/build/_deps/sdl-src/include/close_code.h" "D:/CADCG/soft raster/build/_deps/sdl-build/include/close_code.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SRC\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/CADCG/soft raster" "-BD:/CADCG/soft raster/build" --check-stamp-file "D:/CADCG/soft raster/build/_deps/sdl-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

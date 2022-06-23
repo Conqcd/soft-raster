@@ -1,0 +1,10 @@
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\2563F2DADE6032936B40F343B3FA412F\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/CADCG/soft raster/build/_deps/sdl-subbuild" "-BD:/CADCG/soft raster/build/_deps/sdl-subbuild" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

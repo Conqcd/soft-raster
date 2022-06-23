@@ -1,0 +1,162 @@
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-MKDIR.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-src"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/tmp"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-DOWNLOAD.RULE
+setlocal
+cd "D:\CADCG\soft raster\build\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -P "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/tmp/sdl-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-UPDATE.RULE
+setlocal
+cd "D:\CADCG\soft raster\build\_deps\sdl-src"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -P "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/tmp/sdl-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-PATCH.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-CONFIGURE.RULE
+setlocal
+cd "D:\CADCG\soft raster\build\_deps\sdl-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-BUILD.RULE
+setlocal
+cd "D:\CADCG\soft raster\build\_deps\sdl-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-INSTALL.RULE
+setlocal
+cd "D:\CADCG\soft raster\build\_deps\sdl-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\BBA777E836706BB729B2A9C4C038472A\SDL-POPULATE-TEST.RULE
+setlocal
+cd "D:\CADCG\soft raster\build\_deps\sdl-build"
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\4E631F6A6647DD49D7F90D3A71301A52\SDL-POPULATE-COMPLETE.RULE
+setlocal
+D:\CMake\bin\cmake.exe -E make_directory "D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/Debug/sdl-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+D:\CMake\bin\cmake.exe -E touch "D:/CADCG/soft raster/build/_deps/sdl-subbuild/sdl-populate-prefix/src/sdl-populate-stamp/Debug/sdl-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKEFILES\2563F2DADE6032936B40F343B3FA412F\SDL-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CADCG\SOFT RASTER\BUILD\_DEPS\SDL-SUBBUILD\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/CADCG/soft raster/build/_deps/sdl-subbuild" "-BD:/CADCG/soft raster/build/_deps/sdl-subbuild" --check-stamp-file "D:/CADCG/soft raster/build/_deps/sdl-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

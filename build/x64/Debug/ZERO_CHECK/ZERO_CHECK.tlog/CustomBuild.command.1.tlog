@@ -1,0 +1,10 @@
+^D:\CADCG\SOFT RASTER\BUILD\CMAKEFILES\651A9338C8B9D32F0FA69EBC4FE82A87\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe "-SD:/CADCG/soft raster" "-BD:/CADCG/soft raster/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/CADCG/soft raster/build/Raster.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
