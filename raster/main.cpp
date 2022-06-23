@@ -2,7 +2,7 @@
 #include "shader.hpp"
 #include "model.hpp"
 #include <ctime>
-#include <SDL2/SDL.h>
+// #include <SDL.h>
 
 const unsigned int Width = 800, Height = 600;
 float zNear = -0.1, zFar = -100.0;

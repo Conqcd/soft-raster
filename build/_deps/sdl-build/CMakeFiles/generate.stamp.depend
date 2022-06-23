@@ -9,6 +9,7 @@ D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_config.h.cmake
 D:/CADCG/soft raster/build/_deps/sdl-src/include/SDL_revision.h.cmake
 D:/CMake/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
 D:/CMake/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+D:/CMake/share/cmake-3.22/Modules/CMakeConfigurableFile.in
 D:/CMake/share/cmake-3.22/Modules/CMakeDependentOption.cmake
 D:/CMake/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake
 D:/CMake/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake
@@ -16,6 +17,7 @@ D:/CMake/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake
 D:/CMake/share/cmake-3.22/Modules/CheckCSourceRuns.cmake
 D:/CMake/share/cmake-3.22/Modules/CheckCXXCompilerFlag.cmake
 D:/CMake/share/cmake-3.22/Modules/CheckCXXSourceCompiles.cmake
+D:/CMake/share/cmake-3.22/Modules/CheckIncludeFile.c.in
 D:/CMake/share/cmake-3.22/Modules/CheckIncludeFile.cmake
 D:/CMake/share/cmake-3.22/Modules/CheckIncludeFiles.cmake
 D:/CMake/share/cmake-3.22/Modules/CheckLibraryExists.cmake

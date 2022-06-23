@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <CustomBuild Include="D:\CADCG\soft raster\build\_deps\sdl-subbuild\CMakeFiles\bba777e836706bb729b2a9c4c038472a\sdl-populate-mkdir.rule">
       <Filter>CMake Rules</Filter>

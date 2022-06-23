@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <CustomBuild Include="D:\CADCG\soft raster\build\CMakeFiles\1f5b7c7c7b1f0dacc07e89702d778cf3\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
