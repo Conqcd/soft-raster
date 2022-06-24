@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/CADCG/soft raster/build/_deps/sdl-build/cmake_install.cmake")
+  include("D:/CADCG/soft raster/build/_deps/sdl2-build/cmake_install.cmake")
 endif()
 

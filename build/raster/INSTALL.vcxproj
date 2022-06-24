@@ -191,7 +191,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl-build\ALL_BUILD.vcxproj">
+    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl2-build\ALL_BUILD.vcxproj">
       <Project>{6CD98B11-7598-3329-8328-CDB994694B25}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

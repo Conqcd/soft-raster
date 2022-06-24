@@ -170,19 +170,19 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl-build\SDL2.vcxproj">
+    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl2-build\SDL2.vcxproj">
       <Project>{594A4BFD-E146-39B5-96FC-F22738904B3D}</Project>
       <Name>SDL2</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl-build\SDL2-static.vcxproj">
+    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl2-build\SDL2-static.vcxproj">
       <Project>{AEAF5BCB-62DF-3972-8E36-39471EA4EA39}</Project>
       <Name>SDL2-static</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl-build\SDL2_test.vcxproj">
+    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl2-build\SDL2_test.vcxproj">
       <Project>{55882A24-B6CE-3170-B38C-1D50BFE899F5}</Project>
       <Name>SDL2_test</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl-build\SDL2main.vcxproj">
+    <ProjectReference Include="D:\CADCG\soft raster\build\_deps\sdl2-build\SDL2main.vcxproj">
       <Project>{0A03AA59-DFA3-3AC8-BCAC-BFAB282EDE16}</Project>
       <Name>SDL2main</Name>
     </ProjectReference>

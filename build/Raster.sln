@@ -17,22 +17,22 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj"
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2", "_deps\sdl-build\SDL2.vcxproj", "{594A4BFD-E146-39B5-96FC-F22738904B3D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2", "_deps\sdl2-build\SDL2.vcxproj", "{594A4BFD-E146-39B5-96FC-F22738904B3D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2-static", "_deps\sdl-build\SDL2-static.vcxproj", "{AEAF5BCB-62DF-3972-8E36-39471EA4EA39}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2-static", "_deps\sdl2-build\SDL2-static.vcxproj", "{AEAF5BCB-62DF-3972-8E36-39471EA4EA39}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2_test", "_deps\sdl-build\SDL2_test.vcxproj", "{55882A24-B6CE-3170-B38C-1D50BFE899F5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2_test", "_deps\sdl2-build\SDL2_test.vcxproj", "{55882A24-B6CE-3170-B38C-1D50BFE899F5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2main", "_deps\sdl-build\SDL2main.vcxproj", "{0A03AA59-DFA3-3AC8-BCAC-BFAB282EDE16}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL2main", "_deps\sdl2-build\SDL2main.vcxproj", "{0A03AA59-DFA3-3AC8-BCAC-BFAB282EDE16}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
@@ -43,10 +43,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "raster", "raster\raster.vcxproj", "{08803AE1-FFDA-3394-87D7-A342999F0BEB}"
 	ProjectSection(ProjectDependencies) = postProject
+		{594A4BFD-E146-39B5-96FC-F22738904B3D} = {594A4BFD-E146-39B5-96FC-F22738904B3D}
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uninstall", "_deps\sdl-build\uninstall.vcxproj", "{F6A28A78-369C-3F4C-8146-B7BEE5F583CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uninstall", "_deps\sdl2-build\uninstall.vcxproj", "{F6A28A78-369C-3F4C-8146-B7BEE5F583CD}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4B4735DF-6919-3A89-B7ED-9BCE6D4F992F} = {4B4735DF-6919-3A89-B7ED-9BCE6D4F992F}
 	EndProjectSection
