@@ -6,7 +6,7 @@ void Model::SetABC(float zFar, float zNear)
 	_b = (zFar + zNear) / (zFar - zNear);
 }
 
-Model::Model(const char* path)
+Model::Model(const const std::string& path)
 {
 	shared_ptr<Mesh> object;
 	loadModel(path, object);
@@ -247,7 +247,7 @@ void Model::Switch()
 	useTree = !useTree;
 }
 
-void Model::loadModel(string filename, shared_ptr<Mesh>& object)
+void Model::loadModel(std::string filename, std::shared_ptr<Mesh>& object)
 {
 	int i = 0;
 	fstream file;

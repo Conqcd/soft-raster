@@ -4,7 +4,6 @@
 #include "box.hpp"
 #include "hierarchyZbuffer.hpp"
 #include <string>
-using namespace std;
 
 class Shader
 {

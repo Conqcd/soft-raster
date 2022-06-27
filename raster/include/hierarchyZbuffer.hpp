@@ -2,7 +2,6 @@
 #include "box.hpp"
 #include <vector>
 #include <queue>
-using namespace std;
 
 struct DownNode
 {
@@ -106,7 +105,7 @@ public:
 		zbuffer = new float*[height];
 		x_m = new int[width];
 		y_m = new int[height];
-		for (int i=0;i<height;i++)
+		for (int i = 0;i < height;i++)
 		{
 			zbuffer[i] = new float[width];
 		}
@@ -153,7 +152,7 @@ class HierarchyZbuffer
 {
 public:
 	int width, height;
-	vector<ZBuffer*> HZB;
+	std::vector<ZBuffer*> HZB;
 	ZQueue* que;
 	float ac, _b;
 public:

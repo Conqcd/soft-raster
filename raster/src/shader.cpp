@@ -4,7 +4,7 @@ Shader::Shader()
 {
     width = 800;
     height = 600;
-    HZB=new HierarchyZbuffer(width,height);
+    HZB = new HierarchyZbuffer(width,height);
     useHiZbuffer = false;
 }
 
