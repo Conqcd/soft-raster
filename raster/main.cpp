@@ -8,17 +8,11 @@ const unsigned int Width = 800, Height = 600;
 float zNear = -0.1, zFar = -100.0;
 float deltaTime = 0.0f;
 
-int main(int argc, char** argv) {
-
+int main(int argc, char** argv)
+{
 
     clock_t start, end;
     Shader shader(Width, Height, 3);
-    //const char* path0 = "D:/ZJUfile/G1/CG/CGHW1/CGHW1/Project1/obj/boggie/body.obj";
-    //const char* path1 = "D:/ZJUfile/G1/CG/CGHW1/CGHW1/Project1/obj/african_head/african_head.obj";
-    //const char* path2 = "D:/ZJUfile/G1/CG/CGHW1/CGHW1/Project1/obj/test2.obj";
-    //const char* path3 = "D:/ZJUfile/G1/CG/CGHW1/CGHW1/Project1/obj/test1.obj";
-    //const char* path4 = "D:/ZJUfile/G1/CG/CGHW1/CGHW1/Project1/obj/scene2.obj";
-    //const char* path5 = "D:/ZJUfile/G1/CG/CGHW1/CGHW1/Project1/obj/dragon.obj";
     const char* path0 = "obj/boggie/body.obj";
     const char* path1 = "obj/african_head/african_head.obj";
     const char* path2 = "obj/test2.obj";
@@ -40,9 +34,9 @@ int main(int argc, char** argv) {
     float deep = -2.0;
     float shape = 1.f;
     bool quit = true;
-    bool changed=true;
+    bool changed = true;
 
-    mat4 viewportv = viewport(-(int)Width/2,-(int)Height/2,Width,Height);
+    mat4 viewportv = viewport(-(int)Width / 2,-(int)Height / 2,Width,Height);
     while (quit)
     {
         start = clock();
@@ -59,14 +53,14 @@ int main(int argc, char** argv) {
         modelA.transfer(2, viewportv, projection, view, model2);
         modelA.transfer(3, viewportv, projection, view, model);
         modelA.Draw(&shader,changed);
-        
+
         shader.show();
         end = clock();
         deltaTime = double(end - start) / CLOCKS_PER_SEC;
-        quit=shader.screen.processEvents(deltaTime,modelA.useTree,shader.useHiZbuffer, changed);
+        quit = shader.screen.processEvents(deltaTime,modelA.useTree,shader.useHiZbuffer, changed);
         printf(modelA.useTree ? "OCTree &&" : "not use OCTree &&");
         printf(shader.useHiZbuffer ? "HierachyZbuffer\n" : "Zbuffer\n");
-        printf("time= %lf s FPS= %lf\n", deltaTime, 1 / deltaTime);
+        printf("time = %lf s FPS = %lf\n", deltaTime, 1 / deltaTime);
     }
     return 0;
 }
