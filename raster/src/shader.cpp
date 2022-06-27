@@ -39,6 +39,11 @@ bool Shader::DrawTriangle(const Vec3& v1, const Vec3& v2, const Vec3& v3, const 
     return change;
 }
 
+bool Shader::ProcessEvents(float deltatime,Camera& camera)
+{
+    return screen.processEvents(deltatime,camera);
+}
+
 Shader::~Shader()
 {
 }
@@ -47,4 +52,5 @@ void Shader::Show()
 {
     screen.update();
     screen.clear();
+    ZB->reset();
 }

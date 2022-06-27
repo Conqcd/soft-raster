@@ -1,97 +1,64 @@
 #include "model.hpp"
 
-Model::Model(const std::string& path)
-{
-	shared_ptr<Mesh> object;
-	loadModel(path, object);
-	meshes.push_back(object);
-}
 
-void Model::Draw(Shader* shader,bool& changed)
+void Model::Draw(Shader* shader)
 {
-	shader->ZB->reset();
-	SetBox(shader->m_width, shader->m_height);
-	{
+	// SetBox(shader->m_width, shader->m_height);
 	int count = 0;
-	for (int i = 0; i < numtri; i++) {
-		if (culledface[i])
-			culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-				boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),true);
-		if (!culledface2[i])
-			count++;
+	for (int i = 0; i < m_Indices.size(); i += 3) {
+		shader->DrawTriangle(m_Vertex[m_Indices[i]], m_Vertex[m_Indices[i + 1]], m_Vertex[m_Indices[i + 2]],
+		m_Normal[m_Indices[i]], m_Normal[m_Indices[i + 1]], m_Normal[m_Indices[i + 2]],
+		m_TexCoords[m_Indices[i]], m_TexCoords[m_Indices[i + 1]], m_TexCoords[m_Indices[i + 2]],
+		boxes[i], Color(255,255,255),true);
 	}
-	for (int i = 0; i < numtri; i++) {
-		if (!culledface[i])
-		{
-			culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-				boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),true);
-		}
-	}
-}
 }
 
-void Model::transfer(unsigned index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model)
+void Model::VertexShader(unsigned index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model)
 {
 	if(index >= meshes.size())
 		return;
 
 	mat4 trans = viewport * projection * view * model;
-	
-	int minp = biasv[index], maxp = biasv[index] + meshes[index]->numvtx;
-	int j = 0;
-	for (int i = minp;i<maxp;i++)
+	m_Vertex.reserve(meshes[index]->m_Vertex.size());
+	for (int i = 0,j = 0;i < meshes[index]->numtri;i++)
 	{
-		trans.dotV3(meshes[index]->vertex[j++], nowvertex[i]);
+		trans.dotV3(meshes[index]->m_Vertex[j++], m_Vertex[i]);
 	}
 }
 
 
-void Model::addModel(string path)
+void Model::addModel(const std::string& path,const std::string& material_path)
 {
-	shared_ptr<Mesh> object;
-	loadModel(path, object);
-	meshes.push_back(object);
 
-	biasv.push_back(numvtx);
-	biasf.push_back(numtri);
-	numvtx += object->numvtx;
-	numtri += object->numtri;
-	face = vector<Triangle>(numtri);
-	nowvertex = vector<Vec3>(numvtx);
-	culledface = vector<bool>(numtri);
-	culledface2 = vector<bool>(numtri);
-	newz = vector<float>(numvtx);
-	boxes = vector<AABB3>(numtri);
-	nodes = vector<OCTnode*>(numtri);
+	meshes.emplace_back(path,material_path);
 }
 
 
 void Model::SetBox(int width,int height)
 {
-	float minz,maxz;
-	for (int i = 0; i < numtri; i++) {
-		if(nowvertex[face[i].vid[0]].z> nowvertex[face[i].vid[1]].z)
-		{
-			minz = nowvertex[face[i].vid[1]].z;
-			maxz = nowvertex[face[i].vid[0]].z;
-		}else
-		{
-			minz = nowvertex[face[i].vid[0]].z;
-			maxz = nowvertex[face[i].vid[1]].z;
-		}
-		if(maxz< nowvertex[face[i].vid[2]].z)
-		{
-			maxz = nowvertex[face[i].vid[2]].z;
-		}else if(minz> nowvertex[face[i].vid[2]].z)
-		{
-			minz = nowvertex[face[i].vid[2]].z;
-		}
-		boxes[i].set(nowvertex[face[i].vid[0]]);
-		boxes[i] += nowvertex[face[i].vid[1]];
-		boxes[i] += nowvertex[face[i].vid[2]];
-		boxes[i].setDoubleZ(ac / (minz + _b) + _b, ac / (maxz + _b) + _b);
-		boxes[i].clamp(Vec3(0, 0, -1.0f), Vec3(width - 1, height - 1, 1.0f));
-	}
+	// float minz,maxz;
+	// for (int i = 0; i < numtri; i++) {
+	// 	if(nowvertex[face[i].vid[0]].z> nowvertex[face[i].vid[1]].z)
+	// 	{
+	// 		minz = nowvertex[face[i].vid[1]].z;
+	// 		maxz = nowvertex[face[i].vid[0]].z;
+	// 	}else
+	// 	{
+	// 		minz = nowvertex[face[i].vid[0]].z;
+	// 		maxz = nowvertex[face[i].vid[1]].z;
+	// 	}
+	// 	if(maxz< nowvertex[face[i].vid[2]].z)
+	// 	{
+	// 		maxz = nowvertex[face[i].vid[2]].z;
+	// 	}else if(minz> nowvertex[face[i].vid[2]].z)
+	// 	{
+	// 		minz = nowvertex[face[i].vid[2]].z;
+	// 	}
+	// 	boxes[i].set(nowvertex[face[i].vid[0]]);
+	// 	boxes[i] += nowvertex[face[i].vid[1]];
+	// 	boxes[i] += nowvertex[face[i].vid[2]];
+	// 	boxes[i].clamp(Vec3(0, 0, -1.0f), Vec3(width - 1, height - 1, 1.0f));
+	// }
 }
 
 void Model::SetFace()
@@ -107,95 +74,95 @@ void Model::SetFace()
 	}
 }
 
-void Model::loadModel(std::string filename, std::shared_ptr<Mesh>& object)
+void Model::loadModel(const std::string& filename, std::shared_ptr<Mesh>& object)
 {
-	int i = 0;
-	fstream file;
-	file.open(filename);
-	if (!file.is_open())
-	{
-		printf("Can not read file:%s\n", filename);
-		return;
-	}
-	string line;
-	unsigned int numbVtx, numTri, numTex, numNor, numbVtx2, numTri2, numTex2, numNor2, numbInd;
-	numbVtx = numTri = numTex = numNor = numbVtx2 = numTri2 = numTex2 = numNor2 = numbInd = 0;
-	while (getline(file, line))
-	{
-		if (line[0] == 'v')
-		{
-			if (line[1] == ' ')
-			{
-				numbVtx++;
-			}
-			else if (line[1] == 't')
-			{
-				numTex++;
-			}
-			else if (line[1] == 'n')
-			{
-				numNor++;
-			}
-		}
-		else if (line[0] == 'f')
-		{
-			numTri++;
-		}
-	}
-	file.close();
-	file.open(filename);
-	Triangle* nface = new Triangle[numTri];
-	Vec3* nvertex = new Vec3[numbVtx];
-	Vec3* nnormal = new Vec3[numNor];
-	Vec2* ntexcord = new Vec2[numTex];
-	unsigned int* indices = new unsigned int[numTri * 3];
-	while (getline(file, line))
-	{
-		if (line[0] == 'v')
-		{
-			const char* st = line.c_str();
-			if (line[1] == ' ')
-			{
-				double x, y, z;
-				sscanf(st + 2, "%lf%lf%lf", &x, &y, &z);
-				nvertex[numbVtx2++].set(x, y, z);
-			}
-			else if (line[1] == 't')
-			{
-				double x, y;
-				sscanf(st + 2, "%lf%lf", &x, &y);
-				ntexcord[numTex2++].set(x, y);
-			}
-			else if (line[1] == 'n')
-			{
-				double x, y, z;
-				sscanf(st + 2, "%lf%lf%lf", &x, &y, &z);
-				nnormal[numNor2++].set(x, y, z);
-			}
-		}
-		else if (line[0] == 'f' && line[1] == ' ')
-		{
-			const char* st = line.c_str();
-			int id1, id2, id3, id4, id5, id6, id7, id8, id9;
-			const char* nxt;
-			sscanf(st  + 2, "%d", &id1);
-			nxt = strchr(st + 2, ' ');
+	// int i = 0;
+	// fstream file;
+	// file.open(filename);
+	// if (!file.is_open())
+	// {
+	// 	printf("Can not read file:%s\n", filename);
+	// 	return;
+	// }
+	// string line;
+	// unsigned int numbVtx, numTri, numTex, numNor, numbVtx2, numTri2, numTex2, numNor2, numbInd;
+	// numbVtx = numTri = numTex = numNor = numbVtx2 = numTri2 = numTex2 = numNor2 = numbInd = 0;
+	// while (getline(file, line))
+	// {
+	// 	if (line[0] == 'v')
+	// 	{
+	// 		if (line[1] == ' ')
+	// 		{
+	// 			numbVtx++;
+	// 		}
+	// 		else if (line[1] == 't')
+	// 		{
+	// 			numTex++;
+	// 		}
+	// 		else if (line[1] == 'n')
+	// 		{
+	// 			numNor++;
+	// 		}
+	// 	}
+	// 	else if (line[0] == 'f')
+	// 	{
+	// 		numTri++;
+	// 	}
+	// }
+	// file.close();
+	// file.open(filename);
+	// Triangle* nface = new Triangle[numTri];
+	// Vec3* nvertex = new Vec3[numbVtx];
+	// Vec3* nnormal = new Vec3[numNor];
+	// Vec2* ntexcord = new Vec2[numTex];
+	// unsigned int* indices = new unsigned int[numTri * 3];
+	// while (getline(file, line))
+	// {
+	// 	if (line[0] == 'v')
+	// 	{
+	// 		const char* st = line.c_str();
+	// 		if (line[1] == ' ')
+	// 		{
+	// 			double x, y, z;
+	// 			sscanf(st + 2, "%lf%lf%lf", &x, &y, &z);
+	// 			nvertex[numbVtx2++].set(x, y, z);
+	// 		}
+	// 		else if (line[1] == 't')
+	// 		{
+	// 			double x, y;
+	// 			sscanf(st + 2, "%lf%lf", &x, &y);
+	// 			ntexcord[numTex2++].set(x, y);
+	// 		}
+	// 		else if (line[1] == 'n')
+	// 		{
+	// 			double x, y, z;
+	// 			sscanf(st + 2, "%lf%lf%lf", &x, &y, &z);
+	// 			nnormal[numNor2++].set(x, y, z);
+	// 		}
+	// 	}
+	// 	else if (line[0] == 'f' && line[1] == ' ')
+	// 	{
+	// 		const char* st = line.c_str();
+	// 		int id1, id2, id3, id4, id5, id6, id7, id8, id9;
+	// 		const char* nxt;
+	// 		sscanf(st  + 2, "%d", &id1);
+	// 		nxt = strchr(st + 2, ' ');
 
-			sscanf(nxt + 1, "%d", &id4);
-			nxt = strchr(nxt + 1, ' ');
-			sscanf(nxt + 1, "%d", &id7);
+	// 		sscanf(nxt + 1, "%d", &id4);
+	// 		nxt = strchr(nxt + 1, ' ');
+	// 		sscanf(nxt + 1, "%d", &id7);
 
-			id1 = id1 < 0 ? (int)numbVtx + id1 : id1-1;
-			id4 = id4 < 0 ? (int)numbVtx + id4 : id4-1;
-			id7 = id7 < 0 ? (int)numbVtx + id7 : id7-1;
-			//sscanf(st + 2, "%u/%u/%u %u/%u/%u %u/%u/%u", &id1, &id2, &id3, &id4, &id5, &id6, &id7, &id8, &id9);
-			//indices[numbInd++] = id1 - 1;
-			//indices[numbInd++] = id4 - 1;
-			//indices[numbInd++] = id7 - 1;
-			nface[numTri2++].setv(id1 , id4 , id7 );
-			//nface[numTri2].sett(id2 - 1, id5 - 1, id8 - 1);
-			//nface[numTri2++].setn(id3 - 1, id6 - 1, id9 - 1);
-		}
-	}
-	object = make_shared<Mesh>(numbVtx2, numTri2, numbInd, nface, nvertex, nnormal, ntexcord);
+	// 		id1 = id1 < 0 ? (int)numbVtx + id1 : id1-1;
+	// 		id4 = id4 < 0 ? (int)numbVtx + id4 : id4-1;
+	// 		id7 = id7 < 0 ? (int)numbVtx + id7 : id7-1;
+	// 		//sscanf(st + 2, "%u/%u/%u %u/%u/%u %u/%u/%u", &id1, &id2, &id3, &id4, &id5, &id6, &id7, &id8, &id9);
+	// 		//indices[numbInd++] = id1 - 1;
+	// 		//indices[numbInd++] = id4 - 1;
+	// 		//indices[numbInd++] = id7 - 1;
+	// 		nface[numTri2++].setv(id1 , id4 , id7 );
+	// 		//nface[numTri2].sett(id2 - 1, id5 - 1, id8 - 1);
+	// 		//nface[numTri2++].setn(id3 - 1, id6 - 1, id9 - 1);
+	// 	}
+	// }
+	// object = make_shared<Mesh>(numbVtx2, numTri2, numbInd, nface, nvertex, nnormal, ntexcord);
 }

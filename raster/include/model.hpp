@@ -10,22 +10,18 @@
 class Model
 {
 public:
-	std::vector<std::shared_ptr<Mesh>> meshes;
-	std::string directory;
-
-	std::vector<float> m_Vertex;
-	std::vector<float> m_Normal;
-	std::vector<float> m_TexCoords;
-	std::vector<int> m_Indices;
-
-public:
-
-	Model(const std::string& path);
-	void Draw(Shader* shader, bool& changed);
-	void transfer(unsigned int index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model);
-	void addModel(std::string path);
+	Model() = default;
+	void Draw(Shader* shader);
+	void VertexShader(unsigned int index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model);
+	void addModel(const std::string& path,const std::string& material_path);
 	void SetBox(int width, int height);
 	void SetFace();
 private:
-	void loadModel(std::string path, std::shared_ptr<Mesh>& object);
+	std::vector<std::shared_ptr<Mesh>> meshes;
+	std::string directory;
+	std::vector<Vec3> m_Vertex;
+	std::vector<Vec3> m_Normal;
+	std::vector<Vec2> m_TexCoords;
+	std::vector<int> m_Indices;
+	void loadModel(const std::string& path, std::shared_ptr<Mesh>& object);
 };

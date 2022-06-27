@@ -16,6 +16,7 @@ private:
 public:
 	Shader(int _width = 800, int _height = 600, int bpp = 3);
 	bool DrawTriangle(const Vec3& t0, const Vec3& t1, const Vec3& t2,const AABB3& box, Color color, bool changed);
+	bool ProcessEvents(float deltatime,Camera& camera);
 	void Show();
 	~Shader();
 private:
