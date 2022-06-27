@@ -8,8 +8,8 @@ void Model::Draw(Shader* shader)
 	for (int i = 0; i < m_Indices.size(); i += 3) {
 		shader->DrawTriangle(m_Vertex[m_Indices[i]], m_Vertex[m_Indices[i + 1]], m_Vertex[m_Indices[i + 2]],
 		m_Normal[m_Indices[i]], m_Normal[m_Indices[i + 1]], m_Normal[m_Indices[i + 2]],
-		m_TexCoords[m_Indices[i]], m_TexCoords[m_Indices[i + 1]], m_TexCoords[m_Indices[i + 2]],
-		boxes[i], Color(255,255,255),true);
+		m_TexCoords[m_Indices[i]], m_TexCoords[m_Indices[i + 1]],
+		Color(255,255,255));
 	}
 }
 

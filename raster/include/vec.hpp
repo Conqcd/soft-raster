@@ -86,6 +86,10 @@ public:
 	{
 		return x;
 	}
+	Vec2 getxy() const
+	{
+		return {x,y};
+	}
 	float gety() const
 	{
 		return y;
