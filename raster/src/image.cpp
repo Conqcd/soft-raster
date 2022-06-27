@@ -5,7 +5,8 @@
 #include "camera.hpp"
 
 
-SDLImage::SDLImage():window(NULL), renderer(NULL), texture(NULL), buffer(NULL)
+SDLImage::SDLImage()
+	:window(NULL), renderer(NULL), texture(NULL), buffer(NULL)
 {
 	width = 0;
 	height = 0;
@@ -41,7 +42,7 @@ bool SDLImage::init(int w, int h)
 		SDL_Quit();
 		return false;
 	}
-	//SDL_RENDERER_PRESENTVSYNC
+	/////////// SDL_RENDERER_PRESENTVSYNC
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 	texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888,
 		SDL_TEXTUREACCESS_STREAMING, width, height);
@@ -71,7 +72,7 @@ void SDLImage::clear()
 	memset(buffer, 0, width * height * sizeof(Uint32));
 }
 
-bool SDLImage::processEvents(float deltaTime,bool& set1,bool& set2,bool& changed)
+bool SDLImage::processEvents(float deltaTime,Camera& camera)
 {
 	SDL_Event event;
 	while (SDL_PollEvent(&event) != 0) {
@@ -83,34 +84,21 @@ bool SDLImage::processEvents(float deltaTime,bool& set1,bool& set2,bool& changed
 			{
 			case SDLK_w:
 				camera.ProcessKeyboard(FORWARD, deltaTime);
-				changed = true;
 				break;
 			case SDLK_s:
 				camera.ProcessKeyboard(BACKWARD, deltaTime);
-				changed = true;
 				break;
 			case SDLK_a:
 				camera.ProcessKeyboard(LEFT, deltaTime);
-				changed = true;
 				break;
 			case SDLK_d:
 				camera.ProcessKeyboard(RIGHT, deltaTime);
-				changed = true;
 				break;
 			case SDLK_1:
-				changed = true;
-				set2 = false;
-				set1 = false;
 				break;
 			case SDLK_2:
-				changed = true;
-				set1 = false;
-				set2 = true;
 				break;
 			case SDLK_3:
-				changed = true;
-				set2 = true;
-				set1 = true;
 				break;
 			case SDLK_ESCAPE:
 				return false;
@@ -125,7 +113,6 @@ bool SDLImage::processEvents(float deltaTime,bool& set1,bool& set2,bool& changed
 		{
 			float yoffset = event.wheel.y;
 			camera.ProcessMouseScroll(yoffset);
-			changed = true;
 		}
 		break;
 		case SDL_MOUSEMOTION:
@@ -140,7 +127,6 @@ bool SDLImage::processEvents(float deltaTime,bool& set1,bool& set2,bool& changed
 			last_x = xpos;
 			last_y = ypos;
 			camera.ProcessMouseMovement(diff_x, diff_y);
-			changed = true; 
 		}
 		default:
 			break;
