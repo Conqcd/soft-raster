@@ -30,8 +30,8 @@ Mesh::~Mesh()
 
 void Mesh::draw(Shader* shader)
 {
-	/*for (int i = 0; i < numtri; i++) {
-			shader->drawTriangle(vertex[face[i].vid[0]], vertex[face[i].vid[1]], vertex[face[i].vid[2]],
-				Color(rand() % 255, rand() % 255, rand() % 255),true);
-	}*/
+	for (int i = 0; i < numtri; i++) {
+		shader->DrawTriangle(vertex[face[i].vid[0]], vertex[face[i].vid[1]], vertex[face[i].vid[2]],
+			Color(rand() % 255, rand() % 255, rand() % 255),true);
+	}
 }

@@ -1,181 +1,50 @@
 #include "model.hpp"
 
-void Model::SetABC(float zFar, float zNear)
-{
-	ac = -4 / (zFar - zNear) * zFar * zNear / (zFar - zNear);
-	_b = (zFar + zNear) / (zFar - zNear);
-}
-
-Model::Model(const const std::string& path)
+Model::Model(const std::string& path)
 {
 	shared_ptr<Mesh> object;
 	loadModel(path, object);
 	meshes.push_back(object);
-	first = true;
-	biasv.push_back(0);
-	biasf.push_back(0);
-	numvtx = object->numvtx;
-	numtri = object->numtri;
-	face=vector<Triangle>(numtri);
-	newz = vector<float>(numvtx);
-	nowvertex = vector<Vec3>(numvtx);
-	culledface = vector<bool>(numtri);
-	culledface2 = vector<bool>(numtri);
-	boxes = vector<AABB3>(numtri);
-	nodes = vector<OCTnode*>(numtri);
-	useTree = false;
-	Updateculled = false;
-	deleteTree = false;
 }
 
 void Model::Draw(Shader* shader,bool& changed)
 {
-	if (changed)
+	shader->ZB->reset();
+	SetBox(shader->m_width, shader->m_height);
 	{
-		shader->HZB->reset();
-		SetBox(shader->width, shader->height);
-		if (useTree)
+	int count = 0;
+	for (int i = 0; i < numtri; i++) {
+		if (culledface[i])
+			culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
+				boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),true);
+		if (!culledface2[i])
+			count++;
+	}
+	for (int i = 0; i < numtri; i++) {
+		if (!culledface[i])
 		{
-			oct.Update(boxes, nodes, numtri, first);
-			deleteTree = true;
-			if (first)	first = false;
-			drawNode(oct.root, shader,changed);
-		}
-		else
-		{
-			int count = 0;
-			for (int i = 0; i < numtri; i++) {
-				if (culledface[i])
-					culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-						boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),true);
-				if (!culledface2[i])
-					count++;
-			}
-			for (int i = 0; i < numtri; i++) {
-				if (!culledface[i])
-				{
-					culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-						boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),true);
-				}
-			}
-			Updateculled = true;
-		}
-		changed = false;
-	}else
-	{
-		if (useTree)
-		{
-			if (first)
-			{
-				oct.Update(boxes, nodes, numtri, first);
-				first = false;
-			}
-			if (deleteTree)
-			{
-				oct.PostdeleteNode(oct.root);
-				deleteTree = false;
-				drawNode2(oct.root, shader, changed);
-			}else
-			{
-				drawNode(oct.root, shader, changed);
-			}
-		}else
-		{
-			if(Updateculled)
-			{
-				for (int i = 0; i < numtri; i++) {
-						culledface[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-							boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),false);
-				}
-				Updateculled = false;
-			}else
-			{
-				for (int i = 0; i < numtri; i++) {
-					if (culledface[i])
-						culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-							boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),false);
-				}
-				for (int i = 0; i < numtri; i++) {
-					if (!culledface[i])
-					{
-						culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
-							boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),false);
-					}
-				}
-				culledface = culledface2;
-			}
+			culledface2[i] = shader->drawTriangle(nowvertex[face[i].vid[0]], nowvertex[face[i].vid[1]], nowvertex[face[i].vid[2]],
+				boxes[i], Color(rand() % 255, rand() % 255, rand() % 255),true);
 		}
 	}
-	
 }
-
-void Model::DrawTree(Shader* shader)
-{
-	SetBox(shader->width,shader->height);
-	oct.Update(boxes, nodes, numtri, first);
-
-	if (first)	first = false;
-	drawNode(oct.root,shader,true);
 }
 
 void Model::transfer(unsigned index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model)
 {
-	if(index>=meshes.size())
+	if(index >= meshes.size())
 		return;
 
 	mat4 trans = viewport * projection * view * model;
 	
 	int minp = biasv[index], maxp = biasv[index] + meshes[index]->numvtx;
 	int j = 0;
-	for (int i= minp;i<maxp;i++)
+	for (int i = minp;i<maxp;i++)
 	{
 		trans.dotV3(meshes[index]->vertex[j++], nowvertex[i]);
 	}
 }
 
-void Model::transfer2(unsigned index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model,
-	float near, float far)
-{
-	if (index >= meshes.size())
-		return;
-
-	mat4 trans =  view * model;
-	mat4 trans2 = viewport * projection;
-	mat4 trans3 = trans2 * trans;
-	double a = -2 / (far - near), b = (far + near) / (far - near);
-	double c = -2 * far * near / (far - near);
-	ac = 2 / (far - near) * -2 * far * near / (far - near);
-	b = (far + near) / (far - near);
-	int minp = biasv[index], maxp = biasv[index] + meshes[index]->numvtx;
-	int j = 0;
-	float nz ;
-	//Vec3 vs(1.0f, 1.0,-0.1010);
-	//mat4 temp =  view * model;
-	//Vec3 vd;
-	//trans.dotV3(vs, vd);
-	//trans2.dotV3(vs, vd);
-	//vd.z = a * vd.z + b;
-	//vs=Vec3(1.0f, 1.0, -100.00);
-	//trans.dotV3(vs, vd);
-	//vd.z = a * vd.z + b;
-	/*float x[6] = { 0,800,0,800,0,800 };
-	float y[6] = { 0,800,0,800,0,800 };
-	float z[6] = { -0.95,-0.85,-0.7,0.1,0.6,0.8 };*/
-	for (int i = minp; i < maxp; i++)
-	{
-		//trans3.dotV3(meshes[index]->vertex[j++], nowvertex[i]);
-		//float newnewz = ac / (nowvertex[i].z + b) + b;
-		trans.dotV3(meshes[index]->vertex[j++], nowvertex[i]);
-		nz = a * nowvertex[i].z + b;
-		trans2.dotV3(nowvertex[i], nowvertex[i]);
-		newz[i] = nowvertex[i].z;
-		nowvertex[i].z = nz;
-
-		//nowvertex[i].x = x[i];
-		//nowvertex[i].y = y[i];
-		//nowvertex[i].z = z[i];
-	}
-}
 
 void Model::addModel(string path)
 {
@@ -196,10 +65,6 @@ void Model::addModel(string path)
 	nodes = vector<OCTnode*>(numtri);
 }
 
-void Model::InitOct(int H, int W)
-{
-	oct.createTree(AABB3(Vec3(0, 0, -1), Vec3(W -1, H-1, 1.0f)));
-}
 
 void Model::SetBox(int width,int height)
 {
@@ -236,15 +101,10 @@ void Model::SetFace()
 	{
 		for (int i = 0; i < meshes[j]->numtri; i++)
 		{
-			face[i+bias2].setv(meshes[j]->face[i].vid[0] + biasv[j], meshes[j]->face[i].vid[1] + biasv[j], meshes[j]->face[i].vid[2] + biasv[j]);
+			// face[i+bias2].setv(meshes[j]->face[i].vid[0] + biasv[j], meshes[j]->face[i].vid[1] + biasv[j], meshes[j]->face[i].vid[2] + biasv[j]);
 		}
-		bias2 += meshes[j]->numtri;
+		// bias2 += meshes[j]->numtri;
 	}
-}
-
-void Model::Switch()
-{
-	useTree = !useTree;
 }
 
 void Model::loadModel(std::string filename, std::shared_ptr<Mesh>& object)
@@ -338,43 +198,4 @@ void Model::loadModel(std::string filename, std::shared_ptr<Mesh>& object)
 		}
 	}
 	object = make_shared<Mesh>(numbVtx2, numTri2, numbInd, nface, nvertex, nnormal, ntexcord);
-}
-
-bool Model::drawNode(OCTnode* root, Shader* shader,  bool changed)
-{
-	if (root == nullptr)
-		return false;
-	if(!shader->HZB->Culling4(root->box,true))
-	{
-		//printf("box culled!\n");
-		return false;
-	}
-	int i = 0;
-	root->Draw(culledface, culledface2, nowvertex, face, shader, newz, boxes,changed);
-	for (; i < 4; i++)
-	{
-		drawNode(root->_child[i], shader,changed);
-	}
-	for (; i < 8; i++)
-	{
-		drawNode(root->_child[i], shader, changed);
-	}
-	return true;
-}
-
-bool Model::drawNode2(OCTnode* root, Shader* shader, bool changed)
-{
-	if (root == nullptr)
-		return false;
-	if (!shader->HZB->Culling4(root->box, true))
-	{
-		return false;
-	}
-	int i = 0;
-	root->Draw2(culledface, culledface2, nowvertex, face, shader, newz, boxes, changed);
-	for (; i < 8; i++)
-	{
-		drawNode2(root->_child[i], shader, changed);
-	}
-	return true;
 }

@@ -2,21 +2,23 @@
 
 #include "image.hpp"
 #include "box.hpp"
-#include "hierarchyZbuffer.hpp"
-#include <string>
+#include "Zbuffer.hpp"
+#include <memory>
+
+class Model;
 
 class Shader
 {
-public:
+private:
 	SDLImage screen;
-	HierarchyZbuffer *HZB;
-	int width, height;
-	bool useHiZbuffer;
+	std::unique_ptr<ZBuffer> ZB;
+	int m_width, m_height;
 public:
-	Shader();
-	Shader(int _width, int _height, int bpp);
-	bool drawTriangle(const Vec3& t0, const Vec3& t1, const Vec3& t2,const AABB3& box, Color color, bool changed);
-	void show();
+	Shader(int _width = 800, int _height = 600, int bpp = 3);
+	bool DrawTriangle(const Vec3& t0, const Vec3& t1, const Vec3& t2,const AABB3& box, Color color, bool changed);
+	void Show();
 	~Shader();
-	void Switch();
+private:
+	void init();
+	friend Model;
 };
