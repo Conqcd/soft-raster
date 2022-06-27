@@ -5,7 +5,8 @@
 #include "camera.hpp"
 
 
-SDLImage::SDLImage():window(NULL), renderer(NULL), texture(NULL), buffer(NULL)
+SDLImage::SDLImage()
+	:window(NULL), renderer(NULL), texture(NULL), buffer(NULL)
 {
 	width = 0;
 	height = 0;
@@ -41,7 +42,7 @@ bool SDLImage::init(int w, int h)
 		SDL_Quit();
 		return false;
 	}
-	//SDL_RENDERER_PRESENTVSYNC
+	/////////// SDL_RENDERER_PRESENTVSYNC
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 	texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888,
 		SDL_TEXTUREACCESS_STREAMING, width, height);

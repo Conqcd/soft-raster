@@ -1,5 +1,5 @@
 #pragma once
-
+#define SDL_MAIN_HANDLED
 #include "SDL.h"
 // #include <include/SDL.h>
 
@@ -17,7 +17,7 @@ struct Color {
 	}
 
 };
-
+typedef uint8_t Uint8;
 class SDLImage
 {
 protected:
