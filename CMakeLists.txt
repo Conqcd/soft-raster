@@ -16,3 +16,5 @@ elseif(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Release"))
 endif()
 
 add_subdirectory(raster)
+add_subdirectory(Stb)
+add_subdirectory(TinyOBJLoader)

@@ -17,7 +17,7 @@ public:
 	void SetBox(int width, int height);
 	void SetFace();
 private:
-	std::vector<std::shared_ptr<Mesh>> meshes;
+	std::vector<Mesh> meshes;
 	std::string directory;
 	std::vector<Vec3> m_Vertex;
 	std::vector<Vec3> m_Normal;

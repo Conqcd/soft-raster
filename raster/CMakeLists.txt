@@ -7,6 +7,8 @@ file(GLOB_RECURSE RASTER_SRC *.cpp *.hpp)
 
 include_directories(../raster/include)
 include_directories(../TinyOBJLoader)
+include_directories(../Stb)
+
 # include_directories(${PROJECT_SOURCE_DIR}/third_party/include)
 add_executable(raster
     ${RASTER_SRC}

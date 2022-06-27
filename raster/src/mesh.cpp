@@ -49,6 +49,7 @@ Mesh::Mesh(const std::string& path,const std::string& material_path)
  
     m_Vertex.resize(attrib->vertices.size());
     m_Normal.resize(attrib->normals.size());
+    m_TexCoords.resize(attrib->texcoords.size());
     // m_MaterialId.resize(attrib->vertices.size() / 3);
     for (size_t i = 0; i < shapes->size(); i++)
     {
@@ -57,6 +58,7 @@ Mesh::Mesh(const std::string& path,const std::string& material_path)
             m_Normal[idv].x = attrib->normals[idn * 3];
             m_Normal[idv].y = attrib->normals[idn * 3 + 1];
             m_Normal[idv].z = attrib->normals[idn * 3 + 2];
+            m_Normal[idv].normalize();
             // m_MaterialId[idv] = (*shapes)[i].mesh.material_ids[j / 3];
             
         }
@@ -87,7 +89,7 @@ Mesh::Mesh(const std::string& path,const std::string& material_path)
         {
             m_Textures.emplace_back(1,1);
             uint32_t whiteColor = 0xffffffff;
-            m_Textures.back()->SetData(whiteColor);
+            m_Textures.back().SetData(whiteColor);
         }
     }
 

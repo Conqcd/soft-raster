@@ -3,7 +3,6 @@
 
 void Model::Draw(Shader* shader)
 {
-	// SetBox(shader->m_width, shader->m_height);
 	int count = 0;
 	for (int i = 0; i < m_Indices.size(); i += 3) {
 		shader->DrawTriangle(m_Vertex[m_Indices[i]], m_Vertex[m_Indices[i + 1]], m_Vertex[m_Indices[i + 2]],
@@ -19,17 +18,21 @@ void Model::VertexShader(unsigned index, const mat4& viewport, const mat4& proje
 		return;
 
 	mat4 trans = viewport * projection * view * model;
-	m_Vertex.reserve(meshes[index]->m_Vertex.size());
-	for (int i = 0,j = 0;i < meshes[index]->numtri;i++)
+	m_Vertex.resize(meshes[index].m_Vertex.size());
+	// m_Normal.resize(meshes[index].m_Vertex.size());
+	// m_TexCoords.resize(meshes[index].m_Vertex.size());
+	for (int i = 0,j = 0;i < meshes[index].m_Vertex.size();i++)
 	{
-		trans.dotV3(meshes[index]->m_Vertex[j++], m_Vertex[i]);
+		trans.dotV3(meshes[index].m_Vertex[j++], m_Vertex[i]);
 	}
+	m_Normal.assign(meshes[index].m_Normal.begin(),meshes[index].m_Normal.end());
+	m_TexCoords.assign(meshes[index].m_TexCoords.begin(),meshes[index].m_TexCoords.end());
+	m_Indices.assign(meshes[index].m_Indices.begin(),meshes[index].m_Indices.end());
 }
 
 
 void Model::addModel(const std::string& path,const std::string& material_path)
 {
-
 	meshes.emplace_back(path,material_path);
 }
 
@@ -64,9 +67,9 @@ void Model::SetBox(int width,int height)
 void Model::SetFace()
 {
 	int bias2 = 0;
-	for (int j=0;j<meshes.size();j++)
+	for (int j = 0;j < meshes.size();j++)
 	{
-		for (int i = 0; i < meshes[j]->numtri; i++)
+		for (int i = 0; i < meshes[j].numtri; i++)
 		{
 			// face[i+bias2].setv(meshes[j]->face[i].vid[0] + biasv[j], meshes[j]->face[i].vid[1] + biasv[j], meshes[j]->face[i].vid[2] + biasv[j]);
 		}

@@ -1,7 +1,7 @@
 #include "shader.hpp"
 
 Shader::Shader(int _width, int _height,int bpp)
-    : m_width(_width),m_height(m_height)
+    : m_width(_width),m_height(_height)
 {
     init();
 }
@@ -27,11 +27,15 @@ bool Shader::DrawTriangle(const Vec3& v0, const Vec3& v1, const Vec3& v2, const 
     for (; y <= max_y; y++)
     {
         //#pragma omp parallel for
-        for (; x <= max_x; x++) {
+        for (x = box._min.x; x <= max_x; x++) {
             point.set(x, y);
             barycentric(v0, v1, v2, point, temp1, temp2, bc_screen);
             if (bc_screen.x < 0 || bc_screen.y < 0 || bc_screen.z < 0) continue;
             z = bc_screen.x * v0.z + bc_screen.y * v1.z + bc_screen.z * v2.z;
+            color.r = static_cast<uint8_t>((bc_screen.x * n0.x + bc_screen.y * n1.x + bc_screen.z * n2.x) * 255);
+            color.g = static_cast<uint8_t>((bc_screen.x * n0.y + bc_screen.y * n1.y + bc_screen.z * n2.y) * 255);
+            color.b = static_cast<uint8_t>((bc_screen.x * n0.z + bc_screen.y * n1.z + bc_screen.z * n2.z) * 255);
+
             if (ZB->Update(x, y, z))
             {
                 screen.set(x, y, color.raw[0], color.raw[1], color.raw[2]);

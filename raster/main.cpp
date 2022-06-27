@@ -45,16 +45,16 @@ int main(int argc, char** argv)
         model2 = translate(model2, Vec3(124.0, 94.0, 300));
         model2 = scale(model2, Vec3(1.0, 1.0, 1.0f));
         mat4 model(1.0f);
-        model = translate(model, Vec3(2.0, 1.0, -2.0));
+        model = translate(model, Vec3(0.0, 0.0, -2.0));
         model = scale(model, Vec3(shape, shape, shape));
-        modelA.VertexShader(0, viewportv, projection, view, model2);
+        modelA.VertexShader(0, viewportv, projection, view, model);
         modelA.Draw(&shader);
-        modelA.VertexShader(1, viewportv, projection, view, model);
-        modelA.Draw(&shader);
-        modelA.VertexShader(2, viewportv, projection, view, model2);
-        modelA.Draw(&shader);
-        modelA.VertexShader(3, viewportv, projection, view, model);
-        modelA.Draw(&shader);
+        // modelA.VertexShader(1, viewportv, projection, view, model);
+        // modelA.Draw(&shader);
+        // modelA.VertexShader(2, viewportv, projection, view, model2);
+        // modelA.Draw(&shader);
+        // modelA.VertexShader(3, viewportv, projection, view, model);
+        // modelA.Draw(&shader);
 
         shader.Show();
         end = clock();

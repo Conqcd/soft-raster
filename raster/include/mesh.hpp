@@ -14,7 +14,7 @@ struct Mesh
 	std::vector<Vec3> m_Normal;
 	std::vector<Vec2> m_TexCoords;
 	std::vector<int> m_Indices;
-	std::vector<std::shared_ptr<Texture>> m_Textures;
+	std::vector<Texture> m_Textures;
 	unsigned int numvtx, numtri, numind;
 public:
 	Mesh() = default;
