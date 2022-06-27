@@ -35,6 +35,8 @@ int main(int argc, char** argv)
     float shape = 1.f;
     bool quit = true;
     bool changed = true;
+    modelA.useTree = false;
+    shader.useHiZbuffer = false;
 
     mat4 viewportv = viewport(-(int)Width / 2,-(int)Height / 2,Width,Height);
     while (quit)
@@ -58,8 +60,6 @@ int main(int argc, char** argv)
         end = clock();
         deltaTime = double(end - start) / CLOCKS_PER_SEC;
         quit = shader.screen.processEvents(deltaTime,modelA.useTree,shader.useHiZbuffer, changed);
-        printf(modelA.useTree ? "OCTree &&" : "not use OCTree &&");
-        printf(shader.useHiZbuffer ? "HierachyZbuffer\n" : "Zbuffer\n");
         printf("time = %lf s FPS = %lf\n", deltaTime, 1 / deltaTime);
     }
     return 0;
