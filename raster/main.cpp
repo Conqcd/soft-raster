@@ -11,6 +11,7 @@ float deltaTime = 0.0f;
 int main(int argc, char** argv)
 {
 	Camera camera;
+    Lights light;
     clock_t start, end;
     Shader shader(Width, Height, 3);
     const char* path0 = "obj/boggie/body.obj";
@@ -19,7 +20,8 @@ int main(int argc, char** argv)
     const char* path3 = "obj/test1.obj";
     const char* path4 = "obj/scene2.obj";
     const char* path5 = "obj/dragon.obj";
-    // const char* path6 = "obj/liver_color.obj";
+    const char* path6 = "obj/liver_color.obj";
+    const char* path7 = "obj/mary/mary.obj";
 
 	//加载模型
     Model modelA;
@@ -48,7 +50,7 @@ int main(int argc, char** argv)
         model = translate(model, Vec3(0.0, 0.0, -2.0));
         model = scale(model, Vec3(shape, shape, shape));
         modelA.VertexShader(0, viewportv, projection, view, model);
-        modelA.Draw(&shader);
+        modelA.Draw(&shader,light);
         // modelA.VertexShader(1, viewportv, projection, view, model);
         // modelA.Draw(&shader);
         // modelA.VertexShader(2, viewportv, projection, view, model2);

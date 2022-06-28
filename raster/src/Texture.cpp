@@ -21,6 +21,7 @@ Texture::Texture(const std::string& path)
     m_height = static_cast<uint32_t>(height);
 
     int id = 0;
+    m_Texs.resize(m_width * m_height);
     for (int i = 0; i < m_height; i++)
     {
         for (int j = 0; j < m_width; j++)

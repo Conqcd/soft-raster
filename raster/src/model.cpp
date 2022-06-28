@@ -1,7 +1,7 @@
 #include "model.hpp"
 
 
-void Model::Draw(Shader* shader)
+void Model::Draw(Shader* shader,const Lights& light)
 {
 	int count = 0;
 	for (int i = 0; i < m_Indices.size(); i += 3) {

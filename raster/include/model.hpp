@@ -6,12 +6,13 @@
 #include <fstream>
 #include "shader.hpp"
 #include "mesh.hpp"
+#include "Lights.hpp"
 
 class Model
 {
 public:
 	Model() = default;
-	void Draw(Shader* shader);
+	void Draw(Shader* shader,const Lights& light);
 	void VertexShader(unsigned int index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model);
 	void addModel(const std::string& path,const std::string& material_path);
 	void SetBox(int width, int height);
