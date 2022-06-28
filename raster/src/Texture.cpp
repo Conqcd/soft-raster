@@ -26,14 +26,23 @@ Texture::Texture(const std::string& path)
     {
         for (int j = 0; j < m_width; j++)
         {
-            m_Texs[id] = (data[id * 3] << 24) | (data[id * 3 + 1] << 16) | (data[id * 3 + 2] << 8); 
+            m_Texs[id].x = data[id * 3] / 255;
+            m_Texs[id].y = data[id * 3 + 1] / 255;
+            m_Texs[id].z = data[id * 3 + 2] / 255;
             id++;
         }
     }
     stbi_image_free(data);
 }
 
-void Texture::SetData(uint32_t color)
+void Texture::SetData(Vec3 color)
 {
     m_Texs.assign(m_height * m_width,color);
+}
+
+Vec3 Texture::GetColor(Vec2 tc)const
+{
+	if (tc.x < 0.0 || tc.x > 1.0 || tc.y < 0 || tc.y > 1.0)
+		return Vec3(0,0,0);
+    return m_Texs[tc.x * m_width + tc.y * m_width * m_height];
 }

@@ -55,10 +55,14 @@ Mesh::Mesh(const std::string& path,const std::string& material_path)
     {
         for (size_t j = 0; j < (*shapes)[i].mesh.indices.size(); j ++) {
             int idv = (*shapes)[i].mesh.indices[j].vertex_index,idn = (*shapes)[i].mesh.indices[j].normal_index;
-            m_Normal[idv].x = attrib->normals[idn * 3];
-            m_Normal[idv].y = attrib->normals[idn * 3 + 1];
-            m_Normal[idv].z = attrib->normals[idn * 3 + 2];
-            m_Normal[idv].normalize();
+            Vec3 normal;
+            normal.x = attrib->normals[idn * 3];
+            normal.y = attrib->normals[idn * 3 + 1];
+            normal.z = attrib->normals[idn * 3 + 2];
+            normal.normalize();
+
+            m_Normal[idv] += normal;
+
             // m_MaterialId[idv] = (*shapes)[i].mesh.material_ids[j / 3];
             
         }
@@ -88,8 +92,7 @@ Mesh::Mesh(const std::string& path,const std::string& material_path)
         else
         {
             m_Textures.emplace_back(1,1);
-            uint32_t whiteColor = 0xffffffff;
-            m_Textures.back().SetData(whiteColor);
+            m_Textures.back().SetData(Vec3(1,1,1));
         }
     }
 
@@ -99,6 +102,8 @@ Mesh::Mesh(const std::string& path,const std::string& material_path)
         m_Vertex[i].x = attrib->vertices[i * 3];
         m_Vertex[i].y = attrib->vertices[i * 3 + 1];
         m_Vertex[i].z = attrib->vertices[i * 3 + 2];
+
+        m_Normal[i].normalize();
 
         m_TexCoords[i].x = attrib->texcoords[i * 2];
         m_TexCoords[i].y = attrib->texcoords[i * 2 + 1];

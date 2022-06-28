@@ -70,6 +70,11 @@ public:
 			dst.z = (_data[2][0] * src.x + _data[2][1] * src.y + _data[2][2] * src.z + _data[2][3]) / GLH_EPSILON;
 		}
 	}
+	void dotV30(const Vec3& src,Vec3& dst)const{
+		dst.x = (_data[0][0] * src.x + _data[0][1] * src.y + _data[0][2] * src.z);
+		dst.y = (_data[1][0] * src.x + _data[1][1] * src.y + _data[1][2] * src.z);
+		dst.z = (_data[2][0] * src.x + _data[2][1] * src.y + _data[2][2] * src.z);
+	}
 	void dotV3_Special(const Vec3& src, Vec3& dst)const {
 
 		float v = _data[3][0] * src.x + _data[3][1] * src.y + _data[3][2] * src.z + _data[3][3];

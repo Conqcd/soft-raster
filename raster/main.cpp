@@ -27,6 +27,7 @@ int main(int argc, char** argv)
     Model modelA;
 
     modelA.addModel(path1,"obj/african_head");
+    // modelA.addModel(path7,"obj/mary");
     //modelA.addModel(path1);
 	//modelA.addModel(path5);
 
@@ -50,7 +51,7 @@ int main(int argc, char** argv)
         model = translate(model, Vec3(0.0, 0.0, -2.0));
         model = scale(model, Vec3(shape, shape, shape));
         modelA.VertexShader(0, viewportv, projection, view, model);
-        modelA.Draw(&shader,light);
+        modelA.Draw(&shader, light, camera, viewportv, projection, view);
         // modelA.VertexShader(1, viewportv, projection, view, model);
         // modelA.Draw(&shader);
         // modelA.VertexShader(2, viewportv, projection, view, model2);

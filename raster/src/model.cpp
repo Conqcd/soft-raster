@@ -1,31 +1,41 @@
 #include "model.hpp"
 
 
-void Model::Draw(Shader* shader,const Lights& light)
+void Model::Draw(Shader* shader,const Lights& light,const Camera& camera, const mat4& viewport, const mat4& projection, const mat4& view)
 {
 	int count = 0;
+	mat4 trans = viewport * projection * view;
+	auto lightPos = light.LightPos;
+	view.dotV3(light.LightPos, lightPos);
+
 	for (int i = 0; i < m_Indices.size(); i += 3) {
 		shader->DrawTriangle(m_Vertex[m_Indices[i]], m_Vertex[m_Indices[i + 1]], m_Vertex[m_Indices[i + 2]],
+		m_Position[m_Indices[i]], m_Position[m_Indices[i + 1]], m_Position[m_Indices[i + 2]],
 		m_Normal[m_Indices[i]], m_Normal[m_Indices[i + 1]], m_Normal[m_Indices[i + 2]],
-		m_TexCoords[m_Indices[i]], m_TexCoords[m_Indices[i + 1]],
-		Color(255,255,255));
+		m_TexCoords[m_Indices[i]], m_TexCoords[m_Indices[i + 1]],m_TexCoords[m_Indices[i + 2]],
+		Color(255,255,255),lightPos,light.LightIntensity,camera.Position,meshes[drawIndex].m_Textures[0]);
 	}
 }
 
-void Model::VertexShader(unsigned index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model)
+void Model::VertexShader(unsigned int index, const mat4& viewport, const mat4& projection, const mat4& view, const mat4& model)
 {
 	if(index >= meshes.size())
 		return;
 
 	mat4 trans = viewport * projection * view * model;
 	m_Vertex.resize(meshes[index].m_Vertex.size());
+	m_Position.resize(meshes[index].m_Vertex.size());
+	m_Normal.resize(meshes[index].m_Normal.size());
+	drawIndex = index;
 	// m_Normal.resize(meshes[index].m_Vertex.size());
 	// m_TexCoords.resize(meshes[index].m_Vertex.size());
 	for (int i = 0,j = 0;i < meshes[index].m_Vertex.size();i++)
 	{
+		model.dotV3(meshes[index].m_Vertex[j], m_Position[i]);
+		model.dotV30(meshes[index].m_Normal[j], m_Normal[i]);
+		m_Normal[i].normalize();
 		trans.dotV3(meshes[index].m_Vertex[j++], m_Vertex[i]);
 	}
-	m_Normal.assign(meshes[index].m_Normal.begin(),meshes[index].m_Normal.end());
 	m_TexCoords.assign(meshes[index].m_TexCoords.begin(),meshes[index].m_TexCoords.end());
 	m_Indices.assign(meshes[index].m_Indices.begin(),meshes[index].m_Indices.end());
 }

@@ -63,11 +63,10 @@ public:
 	}
 	Vec3(float _x, float _y, float _z) :x(_x), y(_y), z(_z)
 	{
-
 	}
+	
 	Vec3(float _v[3]) :x(_v[0]), y(_v[1]), z(_v[2])
 	{
-
 	}
 	void set(float _x, float _y, float _z)
 	{
@@ -123,7 +122,18 @@ public:
 	{
 		return Vec3(x + v.x, y + v.y, z + v.z);
 	}
-
+	Vec3 pow(const Vec3& v) const &
+	{
+		return Vec3(powf(x,v.x), powf(y,v.y), powf(z,v.z));
+	}
+	Vec3 pow(const Vec3& v) const &&
+	{
+		return Vec3(powf(x,v.x), powf(y,v.y), powf(z,v.z));
+	}
+	Vec3 multi(const Vec3& v) const
+	{
+		return Vec3(x * v.x,y * v.y,z * v.z);
+	}
 	float dot(const Vec3& vec) const {
 		return x * vec.x + y * vec.y + z * vec.z;
 	}
@@ -141,6 +151,11 @@ public:
 	Vec3 operator *(float t) const
 	{
 		return Vec3(x * t, y * t, z * t);
+	}
+
+	Vec3 operator /(float t) const
+	{
+		return Vec3(x / t, y / t, z / t);
 	}
 
 	float operator[](int t) const
